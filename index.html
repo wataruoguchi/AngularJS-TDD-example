@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+  <meta charset="UTF-8">
+  <title>AngularJS plus Gulp</title>
+</head>
+<body ng-app="myApp" ng-controller="sampleController">
+  <div>
+    <p>I am <span class="me">{{myName}}</span>.</p>
+  </div>
+  <script type="text/javascript">
+    angular.module("myApp", []).controller("sampleController", function($scope) {
+      $scope.myName = "John";
+    });
+  </script>
+</body>
+</html>
